@@ -23,6 +23,7 @@ import './theme/variables.css';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Menu from './components/Menu';
+import Sidebar from './components/Sidebar';
 
 setupIonicReact();
 
@@ -37,8 +38,8 @@ const App: React.FC = () => (
 				<Route exact path="/register">
 					<Register />
 				</Route>
-				<Route exact path="/app">
-					<Menu />
+				<Route path="/app">
+					<Sidebar />
 				</Route>
 
 			</IonRouterOutlet>
